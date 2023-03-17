@@ -1,0 +1,35 @@
+<!--18.-Agregamos para navegar, como pestañas-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a routerLink="empleados" routerLinkActive="active" class="nav-link"
+          >Lista de Empleados</a
+        >
+      </li>
+  
+      <li class="nav-item">
+        <a
+          routerLink="registrar-empleado" routerLinkActive="active" class="nav-link"
+          >Añadir Empleados</a
+        >
+      </li>
+    </ul>
+  </nav>
+
+
+
+<!--1.-titulo-->
+<h1 class="text-center"> {{ title }} </h1> 
+
+<!--7._Agrego mi componente el [6]-->
+<!-- {<app-listar-empleados></app-listar-empleados>} --> 
+
+<!--11. Para poner la tabla en el centro-->
+<div class="container">
+    <!--<app-listar-empleados></app-listar-empleados>--> 
+    
+    <!--SE AGREGA LOS SIGUIENTE PARA LA RUTA {16.1}-->
+    <router-outlet></router-outlet>
+</div>
+
+

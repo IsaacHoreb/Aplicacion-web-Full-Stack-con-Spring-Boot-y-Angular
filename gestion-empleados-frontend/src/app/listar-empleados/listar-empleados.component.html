@@ -1,0 +1,36 @@
+<!--8.*Agregamos los siguiente-->
+<h2>Listar Empleados</h2>
+
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+            <th>Telefono</th>
+            <th>Direccion</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <!--10.-->
+        <tr *ngFor="let Empleados of empleados">
+            <td> {{Empleados.nombres}} </td>
+            <td> {{Empleados.apellidos}} </td>
+            <td> {{Empleados.emial}} </td>
+            <td> {{Empleados.telefono}} </td>
+            <td> {{Empleados.direccion}} </td>
+            <td>
+                <!--24.1-Bottones-->
+                <button (click)= "eliminarEmpleado(Empleados.id)" class="btn btn-danger" style="margin-left: 10px">Eliminar</button>
+                <button (click)= "verDetallesDelEmpleado(Empleados.id)" class="btn btn-primary" style="margin-left: 10px">Detalles</button>
+              </td>
+        </tr>
+
+    </tbody>
+
+</table>
+
+
+
+

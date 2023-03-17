@@ -1,0 +1,83 @@
+<!--21.*AGREGAMOS PARA MOSTRAR Y REGISTRAR-->
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">Registro de Empleados</h3>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label>Nombre : </label>
+        <input
+          type="text"
+          class="form-control"
+          id="nombre"
+          [(ngModel)]="empleado.nombres"
+          name="nombre"
+          required=""
+          minlength="4"
+          maxlength="16"
+          placeholder="Digite su nombre "
+          #nombre="ngModel"
+        />
+    </div>
+        
+        <div class="form-group">
+            <label>Apellido : </label>
+            <input
+              type="text"
+              class="form-control"
+              id="apellido"
+              [(ngModel)]="empleado.apellidos"
+              name="apellido"
+              required=""
+              minlength="4"
+              maxlength="20"
+              placeholder="Digite su apellido "
+            />
+          </div>
+      
+          <div class="form-group">
+            <label>Email : </label>
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              [(ngModel)]="empleado.emial"
+              name="email"
+              required=""
+              minlength="4"
+              maxlength="60"
+              placeholder="Digite su correo "
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Telefono : </label>
+            <input
+              type="text"
+              class="form-control"
+              id="telefono"
+              [(ngModel)]="empleado.telefono"
+              name="telefono"
+              required=""
+              minlength="4"
+              maxlength="10"
+              placeholder="Digite su telefono"
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Direccion : </label>
+            <input
+              type="text"
+              class="form-control"
+              id="Direccion"
+              [(ngModel)]="empleado.direccion"
+              name="Direccion"
+              required=""
+              minlength="4"
+              maxlength="10"
+              placeholder="Digite su direccion "
+            />
+          </div>
+      
+          <button class="btn btn-success">Save</button>
+        </form>
+      </div>
